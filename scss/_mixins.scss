@@ -1,0 +1,39 @@
+@mixin reset-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+@mixin desc-style($weight:400, $size:18px,$lnheight:1.5) {
+  margin: 0px;
+  padding: 0px;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lnheight;
+}
+@mixin title-style($weight:700, $size:auto,$lnheight:1.5) {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bebas Neue", "Arial" , sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lnheight;
+}
+@mixin main-link {
+  border-radius: 4px;
+  border: none;
+  width:260px;
+  height: 60px;
+  font-family: "Open Sans","Arial",sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(26, 25, 23, 1);
+  background-color: rgba(243, 175, 52, 1);
+  transition: 0.2s ease all;
+
+  &:hover{
+   opacity: 0.6;
+   color: rgba(243, 175, 52, 1);
+   background-color: rgba(26, 25, 23, 1);
+  }
+}

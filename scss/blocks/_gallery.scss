@@ -1,0 +1,126 @@
+.gallery{
+  padding: 187px 0 141px;
+  background-image: url(../../img/gallery-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.gallery__container{
+  display: flex;
+  justify-content: left;
+
+}
+.gallery__gallery-img{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+}
+.gallery__content{
+  width: 552px;
+  padding: 68px 0 0;
+  color:rgba(255, 255, 255, 1);
+  position: relative;
+}
+.gallery__maintitle{
+  @include title-style(700,24px,24px);
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+.gallery__title{
+  @include title-style(700,80px,80px);
+  letter-spacing: 3px;
+  max-width: 411px;
+  margin-bottom: 72px;
+}
+.gallery__desc{
+  @include desc-style(400,18px,22px);
+  margin-left: auto;
+  max-width: 364px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.gallery__desc-inner{
+  font-weight: 700;
+  opacity: 1;
+}
+.gallery__line{
+  display: block;
+  width: 711px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 268px;
+}
+.gallery__slider-btn{
+  width: 16px;
+  height: 36px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  margin: auto 0 auto 38px;
+  background-image: url(../../img/switch.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top 0 left -1px;
+}
+@media only screen and (max-width:$tablet){
+  .gallery{
+    padding:0 0 33px;
+  }
+  .gallery__container{
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .gallery__content{
+    padding: 19px 0  0;
+    margin-bottom: 55px;
+    width: 100%;
+}
+
+}
+@media only screen and (max-width:$mobile){
+.gallery{
+    padding-bottom: 33px;
+  }
+.gallery__content{
+    padding: 19px 0  0;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.gallery__maintitle{
+  @include title-style(700,18px,18px);
+  margin-bottom: 5px;
+}
+.gallery__title{
+  @include title-style(700,33px,33px);
+  max-width: 271px;
+  margin-bottom: 33px;
+}
+.gallery__desc{
+  @include desc-style(400,14px,16px);
+  margin-left: auto;
+  max-width: 228px;
+}
+.gallery__line{
+  width: 306px;
+  position: absolute;
+  top: 117px;
+}
+.gallery__gallery-img{
+  margin-left: auto;
+}
+.gallery__img{
+  width: 205px;
+  height: 273px;
+}
+.gallery__slider-btn{
+  width: 8px;
+  height: 18px;
+  margin-left: 13px;
+  background-image: url(../../img/switch-mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top 0 left -1px;
+}
+}

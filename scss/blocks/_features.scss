@@ -1,0 +1,117 @@
+.features{
+  padding: 281px 0 0 ;
+  background-image: url(../../img/features-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -6px;
+}
+.features__container{
+  display: flex;
+  justify-content: flex-end;
+}
+.features__content{
+  color: rgba(255, 255, 255, 1);
+}
+.features__maintitle{
+  @include title-style(700,24px,24px);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.features__title{
+  @include title-style(700,80px,80px);
+  letter-spacing: 3px;
+  margin-bottom: 70px;
+}
+.features__list{
+  @include reset-list;
+  margin-bottom: 258px;
+}
+.features__item-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.features__item{
+  margin-bottom: 36px;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+.features__item-btn{
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: none;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 32px;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+.features__item-btn-selected{
+  background-color:rgba(255, 255, 255, 1);
+}
+.features__item-title{
+  @include title-style(700,36px,36px);
+  letter-spacing: 2px;
+  color: rgba(255, 181, 72, 1);
+}
+.features__item-desc{
+  @include desc-style(400,18px,22px);
+  max-width: 362px;
+  margin-left: 46px;
+}
+@media only screen and (max-width:$tablet){
+
+  .features__maintitle{
+    @include title-style(700,18px,18px);
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+  }
+  .features__title{
+    @include title-style(700,33px,33px);
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+  }
+  .features__list{
+    margin-bottom: 151px;
+
+  }
+  .features__item{
+    margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+  .features__item-btn{
+    margin-right: 18px;
+  }
+  .features__item-title{
+    @include title-style(700,24px,24px);
+    letter-spacing: 2px;
+    color: rgba(255, 181, 72, 1);
+  }
+  .features__item-desc{
+    @include desc-style(400,16px,20px);
+    max-width: 260px;
+    margin-left: 32px;
+  }
+}
+@media only screen and (max-width:$mobile){
+  .features{
+    padding: 92px 0 0 ;
+    background-image: url(../../img/features-mobbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .features__item-title{
+    @include title-style(700,18px,24px);
+    letter-spacing: 2px;
+    color: rgba(255, 181, 72, 1);
+  }
+
+}

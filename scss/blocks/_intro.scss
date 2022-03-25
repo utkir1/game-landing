@@ -1,0 +1,100 @@
+.intro{
+  padding: 214px 0px 53px;
+  // display: none;
+
+}
+.intro__title{
+  @include title-style(700,80px,80px);
+  max-width: 1156px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 3px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+.intro__desc{
+  @include title-style(700,24px,24px);
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.intro__link{
+  @include main-link;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 363px ;
+
+  background-image: url(../../img/line1.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top 17px right 81px;
+}
+.intro__sliderbox{
+  display: block;
+  width: 70px;
+  height: 32px;
+  margin: 0 auto;
+}
+.intro__sliderbox-desc{
+  margin: 0px;
+  @include desc-style(700,12px,22px);
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+.intro__sliderbox-btn{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display:block;
+  height: 8px;
+  font-size: 8px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../img/scroll-down.svg);
+  background-repeat: no-repeat;
+  background-position: top -2px right 25px;
+
+}
+@media only screen and (max-width:$mobile){
+  .intro{
+    padding: 176px 0px 79px;
+  }
+  .intro__container{
+    background-image: url(../../img/banners.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right 20px bottom 12px;
+  }
+  .intro__title{
+    @include title-style(400,32px,22px);
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .intro__desc{
+    @include title-style(400,18px,18px);
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  .intro__link{
+    @include main-link;
+    width: 216px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 6px;
+    margin-bottom: 174px ;
+
+    background-position: top 10px right 60px;
+  }
+  .intro__sliderbox{
+    display: block;
+    width: 70px;
+    height: 32px;
+    margin: 0;
+  }
+}
